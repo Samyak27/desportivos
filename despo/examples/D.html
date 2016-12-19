@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Horizontal navigation dots - fullPage.js</title>
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.min.js"></script>
+		 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="cssevents/style.css">
+    <link rel="stylesheet" href="csscursor/style.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page']
+			});
+		});
+	</script>
+
+</head>
+<body>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Navigation dots</h1>
+			<p>An easy and beautiful way to navigate throw the sections</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+			
+				<h1>Clickable</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Slide 2</h1>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+				<section id="photostack-1" class="photostack photostack-start">
+				<div>
+					<figure>
+						<a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="img/1.jpg" alt="img01"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Serenity Beach</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="img/2.jpg" alt="img02"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Happy Days</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="img/3.jpg" alt="img03"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Beautywood</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/49lN3k" class="photostack-img"><img src="img/4.jpg" alt="img04"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Heaven of time</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="img/5.jpg" alt="img05"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Speed Racer</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="img/6.jpg" alt="img06"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Forever this</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/7.jpg" alt="img07"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Lovely Green</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/8.jpg" alt="img08"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Wonderful</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/9.jpg" alt="img09"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Love Addict</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/10.jpg" alt="img10"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Friendship</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/11.jpg" alt="img11"/></a>
+						<figcaption>
+							<h2 class="photostack-title">White Nights</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/12.jpg" alt="img12"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Serendipity</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/13.jpg" alt="img13"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Pure Soul</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/14.jpg" alt="img14"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Winds of Peace</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/15.jpg" alt="img15"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Shades of blue</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/16.jpg" alt="img16"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Lightness</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+		<script src="js/classie.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+			
+			new Photostack( document.getElementById( 'photostack-1' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+		</script>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+		<iframe width="600" height="300" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=The LNMIIT ,jaipur, &t=&z=15&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.map-embed.com/pt/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">map-embed.com</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></iframe>
+		</div>
+		</div>
+</div>
+
+
+</body>
+</html>
