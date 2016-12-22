@@ -151,7 +151,7 @@ button {
 	font-size: ;
 	cursor: pointer;
 	left:92.8%;
-	top:-0.28%;
+	top:-0.3%;
 	position:fixed;
 	
 	background:transparent;
@@ -278,16 +278,45 @@ footer	{padding-top:20px;
 
 										}
 
-.section .intro	{display:block;
+.section .intro1	{display:block;
 				width:10%;
 				height:auto;
 				padding:10px;
 				background:transparent;
 				border:1px solid white;
 				position:relative;
-				top:38%;
+				top:60%;
 				left:46%;
 				cursor:pointer;
 				}
-.section .intro	 a{color:white;}
-.section .intro	 a:hover{background-color:#242529}
+.section .intro1	 a{color:white;}
+.section .intro1	 a:hover{background-color:#242529}
+
+.middle	{display:block;
+		width:2px;
+		height:200px;
+		position:relative;
+		background:white;
+		left:50%;
+		margin-top:45%;}
+.social	{display:block;
+		width:4%;}
+
+.social li	{display:block;
+			height:auto;
+			width:100%;
+			padding:15px;
+			border:1px;
+			border-radius:50%;
+			margin:5px;
+			font-size:1em;
+			cursor:pointer;
+			background-color:;
+			}
+
+.fb	{background-color:#3b5988;}
+
+
+.twitter	{background-color:#0084b4;}
+.youtube	{background-color:#c4302b;}
+.insta		{background-color:#E54E4E;}
