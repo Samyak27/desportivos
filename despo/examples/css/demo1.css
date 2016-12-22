@@ -19,7 +19,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #48a770;
+	color:;
 	outline: none;
 }
 
@@ -116,8 +116,8 @@ a:hover, a:focus {
 }
 
 .main {
-	max-width:;
-	margin: 0;
+	margin-bottom: 30px;
+	padding-bottom:30px;
 }
 
 .column {
@@ -143,24 +143,30 @@ a:hover, a:focus {
 }
 
 button {
-	border: none;
-	padding: 0.6em 1.2em;
-	background: #388a5a;
+	text-align:center;
+	height:0;
+	width:0;
 	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	font-size: 1em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+	font-size: ;
 	cursor: pointer;
-	display: inline-block;
-	margin: 3px 2px;
-	border-radius: 2px;
-	position:fixed; 
+	left:92.8%;
+	top:-0.28%;
+	position:fixed;
+	
+	background:transparent;
 	z-index:5;
 }
+button img {position:relative;
+			left:0%;
+			top:0;
+			height:5.5vw;
+			width:5.5vw;
+			display:block;
+			}
 
 button:hover {
-	background: #2c774b;
+	background:none;
 }
 
 .info {
@@ -212,3 +218,76 @@ button:hover {
 	}
 
 }
+
+
+
+
+.frontvideo , .reachus	{border:0 1px 0 0 solid white;
+			margin:10px 0;
+			padding:10px 0;
+			position:relative;
+			margin-top:-70px;
+		}
+		
+.frontvideo h1 {display:block;
+				position:relative;
+				width:100%;
+				text-align:center;
+				padding:10px;}
+.reachus h1 {display:block;
+				position:relative;
+				width:100%;
+				text-align:center;
+				padding:10px;}
+
+footer	{padding-top:20px;
+		background:;}
+
+@media screen and (max-width: 992px) {
+			.reachus	{border:1px solid gray;
+			display:block;
+			margin:10px 0;
+			padding:10px 0;
+			position:relative;
+			margin-top:-70px;}
+				
+		   .frontvideo	{display:none;
+						}		
+			button {
+				text-align:center;
+				height:0;
+				width:0;
+				color: #fff;
+				font-family: 'Lato', Calibri, Arial, sans-serif;
+				font-size: ;
+				cursor: pointer;
+				left:85%;
+				top:-0.28%;
+				position:fixed;
+
+				background:transparent;
+				z-index:5;
+			}
+			button img {position:relative;
+						left:0%;
+						top:0;
+						height:10vw;
+						width:10vw;
+						display:block;
+						}
+
+										}
+
+.section .intro	{display:block;
+				width:10%;
+				height:auto;
+				padding:10px;
+				background:transparent;
+				border:1px solid white;
+				position:relative;
+				top:38%;
+				left:46%;
+				cursor:pointer;
+				}
+.section .intro	 a{color:white;}
+.section .intro	 a:hover{background-color:#242529}
