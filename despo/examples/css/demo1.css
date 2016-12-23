@@ -285,7 +285,7 @@ footer	{padding-top:20px;
 				background:transparent;
 				border:1px solid white;
 				position:relative;
-				top:60%;
+				top:50%;
 				left:46%;
 				cursor:pointer;
 				}
@@ -320,3 +320,7 @@ footer	{padding-top:20px;
 .twitter	{background-color:#0084b4;}
 .youtube	{background-color:#c4302b;}
 .insta		{background-color:#E54E4E;}
+
+.arrow	{position:relative;
+		left:40%;
+		top:-15%;}
