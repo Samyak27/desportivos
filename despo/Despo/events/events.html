@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Events | Desportivos'17</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Mirza">
+          <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+
+</head>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button2 {
+    border-radius: 8px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    border-radius: 8px;
+    background-color: #008CBA;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.right {
+    position: absolute;
+    right: 40px;
+    padding: 10px;
+    top: 50px;
+}
+
+footer li{
+                display: inline-block;
+                list-style: none;
+                text-align: center;
+                padding: 0px 40px 0px;
+/*                background-color: gray;*/
+            }
+
+            footer a{
+                color: white;
+            }
+            
+            footer{
+                text-align: center;
+                background-color: black;
+            }
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+    </style>
+<body style="background-size:cover;background-image: url(imgpack/background.png);postion:absolute;background-repeat:no-repeat;">
+<div style="padding-left:3%;padding-top:1%;">
+	<img src="imgpack/despo.png" height="125px" width="auto" ></div>
+  <h1><center><img src="imgpack/despo.png" height="100px" width="auto"></h1></center>
+<h4><a href=# onclick="openNav8()"><img src="imgpack/football.png"></a></h4>
+<h4><a href=# onclick="openNav9()"><img src="imgpack/basketball.png"></a></h4>
+<h4><a href=# onclick="openNav10()"><img src="imgpack/voleyball.png"></a></h4>
+<h4><a href=# onclick="openNav11()"><img src="imgpack/badminton.png"></a></h4>
+<h4><a href=# onclick="openNav12()"><img src="imgpack/tt.png"></a></h4>
+<h4><a href=# onclick="openNav13()"><img src="imgpack/lawntennis.png"></a></h4>
+<h4><a href=# onclick="openNav14()"><img src="imgpack/cricket.png"></a></h4>
+<h4><a href=# onclick="openNav15()"><img src="imgpack/boxing.png"></a></h4>
+<h4><a href=# onclick="openNav16()"><img src="imgpack/chess.png"></a></h4>
+<h4><a href=# onclick="openNav17()"><img src="imgpack/karate.png"></a></h4>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Kabbaddi</h2>
+    <ul>
+	</ul>
+    <br>
+    Contacts:
+    <br>
+    </div>
+</div>
+</div>
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:25px;color:white;text-align:"left"'>
+    <h2>Taekwondo</h2>
+    <ul>
+        <li>* All Events will be conducted as per Latest TFI Rules.
+        <li>* Decisions by the Referee Panel will be the Final.
+        <li>* Events and Weight Categories:
+        <li>* Senior Men and Women
+        <li>* Under 46kg: Not exceeding 46kg
+        <li>* Under 54kg: Not exceeding 54kg
+        <li>* Under 49kg: Over 46kg and Not exceeding 49kg
+        <li>* Under 53kg: Over 49kg and Not exceeding 53kg
+        <li>* Under 57kg: Over 53kg and Not exceeding 57kg
+        <li>* Under 58kg: Over 54kg and Not exceeding 58kg
+        <li>* Under 62kg: Over 57kg and Not exceeding 62kg
+        <li>* Under 63kg: Over 58kg and Not exceeding 63kg
+        <li>* Under 67kg: Over 62kg and Not exceeding 67kg
+        <li>* Under 68kg: Over 63kg and Not exceeding 68kg
+        <li>* Under 73kg: Over 67kg and Not exceeding 73kg
+        <li>* Under 74kg: Over 68kg and Not exceeding 74kg
+        <li>* Under 80kg: Over 74kg and Not exceeding 80kg
+        <li>* Under 87kg: Over 80kg and Not exceeding 87kg
+        <li>* Over 73kg: Over 73kg
+        <li>* Over 87kg: Over 87kg
+    </ul>
+    <br>
+    Contacts:
+    <br>
+    </div></div>
+</div>
+
+<div id="myNav2" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  	<div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Kick boxing</h2>
+    
+    <br>
+    Contacts:
+    <br>
+    </div>
+</div>
+</div>
+
+<div id="myNav3" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Khokho</h2>
+    <ul>
+            </ul>
+    <br>
+    Contacts:
+    <br>
+    </div>
+</div>
+</div>
+
+<div id="myNav4" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Squash</h2>
+    <ul>
+        <li>* A team consist of 3 players.
+        <li>* The order of match between two teams A and X will be (A1 vs X1),<br>(A2 vs X2),(A3 vs X3),(A2 vs X1),(A1 vs X2).
+        <li>* Each match is best of 3 game. A match consists of 16 points.
+        <li>* The server, on winning a rally, scores a point and retains the service; the receiver,<br> on winning a rally, scores a point and becomes the server.
+            committee<br> will be final and binding.
+    </ul>
+    <br>
+    Contacts:
+    <br>Vatsal Goyal: 9783647822
+    <br>Anjali mudgal: 8946951205
+    </div>
+</div>
+</div>
+
+<div id="myNav5" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>LAN Gaming</h2>
+    <ul>
+    </ul>
+    <br>
+    Contacts:
+    <br>
+    </div>
+</div>
+</div>
+
+<div id="myNav6" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Five A Side</h2>
+    <ul>
+    </ul>
+    <br>
+    Contacts:
+    <br>Prasuk Jain: 9413879676
+    <br>Ankit Chaplot: 9461630602
+    </div>
+</div>
+</div>
+
+<div id="myNav7" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Carrom</h2>
+    <ul>
+        <li>* Standard carrom rules apply.
+        <li>* Best of five will be considered out of three singles and two doubles matches<br> played between any two teams. An individual can participate in not more than<br> one singles and one double match.
+        <li>* Each team comprises of 4 players only.
+        <li>* All the rounds before the finals will be knockout rounds.
+        <li>* Any hand may be used in play. Participants can change hand during the game.
+        <li>* In case of any conflict, decisions of the organising committee will be final and binding.
+    </ul>
+    <br>
+    Contacts:
+    <br>Nishant Garg: 8107791643
+    </div>
+</div>
+</div>
+
+
+<div id="myNav8" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Football</h2>
+    <ul>
+        <li>* Normal FIFA rules applicable.
+        <li>* Maximum 15 players are allowed in a team.
+        <li>* Offside etc. as per current format followed.
+        <li>* Maximum 3 substitutions allowed.
+        <li>* Extra time for the matches shall be notified only before the match.
+        <li>* The decision of the refree will be final and binding.
+    </ul>
+    <br>
+    Contacts:
+    <br>Pankaj Kriplani: 7222868410
+    <br>>Utkarsh Pandit: 9414331086
+    </div>
+</div>
+</div>
+
+
+<div id="myNav9" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Basketball</h2>
+    <ul>
+        <li>Mens and Womens Team
+        <li>* Maximum number of players per team are 10.
+        <li>* The match will consist of 4 quarters, each quarter lasting 10 minutes (unless mentioned otherwise).
+        <li>* Fixtures and schedule for matches will be put up at the time of on-desk registration.<br> Timings for the matches will be strictly adhered to.
+        <li>* Officials will keep score and their decisions will be final.</ul>
+    <br>
+    Contacts:
+    <br>Harshit Bishnoi: 9414791205
+    <br>Rishabh Sharma: 8385952233
+    <br>Tayba Wasim: 7568688665
+    <br>Yashasvi Jain: 7742496667
+    </div>
+</div>
+</div>
+
+<div id="myNav10" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav10()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Volleyball</h2>
+    <ul>
+        <li>* Separate matches for girls and boys.
+        <li>* Maximum number of players per team is 12 (6 main + 6 sub).
+        <li>* 3 sets of 25 points each(Final match will be of 5 sets of 25 points each).
+        <li>* Maximum 3 touches are allowed.
+        <li>* Rotation Policy will be followed if both teams agree on it.
+        <li>* Night matches will also be held.    </ul>
+    <br>
+    Contacts:
+    <br>Himanshu Purohit: 7073103357
+    <br>Vishnu yadav: 8769000836
+    <br>Ayushi gupta: 7297803041
+    </div>
+</div>
+</div>
+
+<div id="myNav11" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav11()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Badminton</h2>
+    <ul>
+        <li>* Format of Play: Best of 3 in the order - Singles, Doubles, Singles.
+        <li>* Each match (singles/doubles) will be a best of 3 of 21 points each.
+        <li>* Teams for every game are to be submitted before the match.
+        <li>* Latest IBF rules will be followed.
+        <li>* Teams of maximum 4 players and minimum 3 players are allowed.
+        <li>* Only one player can play in two matches (one singles and one doubles).
+        <li>* Decision of referees and Organising Committee will be final and binding.
+    </ul>
+    <br>
+    Contacts:
+    <br>Kartik Agrawal: 9680595453
+    <br>Apoorv Pusalkar: 8769057662
+    <br>Anjali Gupta: 9460797535
+    </div>
+</div>
+</div>
+
+<div id="myNav12" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav12()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:30px;color:white;text-align:"left"'>
+    <h2>Table Tennis</h2>
+    <ul><br>
+        <li>Mens Team
+        <li>* Format Of Play(in order): Singles(A vs X), Singles (B vs Y), Doubles, <br>Reverse Singles(A vs Y), Reverse Singles(B vs X).
+<li>* All games will be Best of 5.
+<li>* Players playing singles cannot play the doubles.
+<li>* Maximum 5 and minimum 4 separate players are allowed in a team.
+<li>* All standard rules as followed by the ITTF are applicable.
+<li>* Any show of unnecessary aggression or unsportsmanlike conduct towards the umpire or the playing <br>equipment will lead to the immediate disqualification of the player.<br> Any discussions regarding the same will not be entertained.
+<br>
+<br>
+<li>Womens Team
+
+<li>* Format Of Play(in order): Singles(A vs X), Singles (B vs Y), <br>Singles(C vs Z), Reverse Singles(A vs Y), Reverse Singles(B vs X).
+<li>* All games will be Best of 5.
+<li>* 3 separate players are required in the team.
+<li>* Maximum 4 and minimum 3 players are allowed in a team.
+<br>
+<br>
+<li>Open Tournament(For mens only)
+
+<li>* All games will be best of 5 each set will be of 11 points.
+<li>* Open singles
+<li>* Open doubles ( Partners can be from 2 different colleges )</ul>
+    <br>
+    Contacts:
+    <br>Suyash Misra: 9530027432
+    <br>Rajat Chandiwala: 7023336648
+    <br>Divyanshi Soni: 7073708767
+    <br>Shiwani Manhas: 8769209655
+    </div>
+</div>
+</div>
+
+<div id="myNav13" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav13()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Lawn Tennis</h2>
+    <ul>
+        <li>* Each team should have minimum 3 and maximum 4 players.
+<li>* Teams should bring their own kit. Only match balls will be provided for the matches.
+<li>* The chair umpire has final words on all issues related to on court facts.
+<li>* All the team members are required to show their ID cards before the beginning of the <br>match failing which the defaulting individual will not be allowed to play.
+<li>* The Rules of Tennis 2013 as released by the ITF will be followed.
+<li>* In case of a deuce, the first side which scores two points wins the game. <br>These points need not be consecutive.</ul>
+    <br>
+    Contacts:
+    <br>Harshit Jindal: 7222058883
+    <br>Parth Parashar: 9636640086
+    <br>Shreya Rajput: 8107033191
+    </div>
+</div>
+</div>
+
+<div id="myNav14" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav14()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Cricket</h2>
+    <ul><li>* Maximum 15 players are allowed in a team and the tournament will be played<br> on the T-20 knock-out format.
+<li>* Tie in the game will be resolved by a super over.
+<li>* Tie in case of points or wins in finals will be resolved by comparison of net run<br> rates of all the matches played by the team.
+<li>* Teams should report 15 minutes before the scheduled time otherwise the match will<br> be forfeited to the other team.
+<li>* All the teams should come in whites.</ul>
+    <br>
+    Contacts:
+    <br>Nishant Saraf: 9602490090
+    <br>Loveneet Singh: 8426888446
+    <br>Navnish Gupta: 9478584050
+    </div>
+</div>
+</div>
+
+<div id="myNav15" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav15()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Boxing</h2>
+    <ul>
+    </ul>
+    <br>
+    Contacts:
+    <br>
+    </div>
+</div>
+</div>
+
+<div id="myNav16" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav16()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:30px;color:white;text-align:"left"'>
+    <h2>Chess</h2>
+    <ul><br>
+        <li>Classical
+
+<li>* A team consists of 4 players who actually play in tournament and one extra.<br> All the team members must belong to the same Institute.
+<li>* The game is going to be played between 4 players from different teams.
+<li>* The format will be knockout tournament.
+<li>* Latest FIDE rules will be followed in the game.
+<li>* Separate tournaments for boys and girls.
+<li>* Matches will be of 1 hour 30 min (each player).
+<li>* Only one illegal move is allowed in a game of 1 hour and 30 mins.
+<li>* Blitz will be played if scores are same and 3 blitz games will be played between the teams.
+<li>* The arbiter's decision shall be final in case of any discrepancies.
+<br>
+<br>
+<li> Blitz(Tie breaker blitz)
+
+<li>* Illegal moves are not allowed (loss of first illegal move).
+<li>* Matches will be of 5 min (each player).
+<li>* The Arbiter's decision shall be final in case of any discrepancies.
+<li>* no illegal move allowed in blitz (tie breaker)</ul>
+    <br>
+    Contacts:
+    <br>Shubham Jain: 7073528166
+    <br>Milind Adhaulya: 9461289899
+    </div>
+</div>
+</div>
+
+<div id="myNav17" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav17()">&times;</a>
+    <div class="overlay-content">
+    <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+    <h2>Karate</h2>
+    <ul>
+        <li>* Registration of All Events will be conducted as per Latest WKF Rules.
+<li>* Decisions by the Referee Panel will be the Final.
+<li>* All participants should bring their own Karate Equipment
+<li>* No Equipment will be provided by the Institute.
+<li>* Shin Guards and Gum Shields are compulsory for Kumite.
+<li>* 1 Gold, 1 Silver and 1 Bronze will be awarded for each category.
+<br>
+<br>
+<li>Events and Categories:
+<li>* Senior Kata Male: All Weights in 1 Category.
+<li>* Senior Kata Female: All Weights in 1 Category.
+<li>* Senior Kumite Male: -59Kg, -67Kg, -75Kg, +75Kg.
+<li>* No separate categories are there for Color and Black Belts.</ul>
+    <br>
+    Contacts:
+    <br>Kuldeep singh Rathore: 9530460215
+    <br>Shikhar mangla: 8290313276
+    </div>
+</div>
+</div>
+
+
+
+<br>
+<br>
+
+<div class="right">
+<span style="font-size:30px;cursor:pointer;font-family:"Roboto" onclick="openNav()"> <button class="button button2">Kabbaddi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ </span>
+<br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav1()"> <button class="button button2">Taekwondo&nbsp;&nbsp;</button>
+ </span>
+<br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav2()"> <button class="button button2">Kick boxing&nbsp;</button>
+ </span>
+<br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav3()"> <button class="button button2">Khokho  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </button>
+ </span>
+ <br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav4()"> <button class="button button2">Squash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ </span>
+ <br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav5()"> <button class="button button2">LAN Gaming</button>
+ </span>
+<br>
+<span style="font-size:30px;cursor:pointer;"onclick="openNav6()"> <button class="button button2">Five A Side&nbsp;&nbsp;	</button>
+ </span>
+<br>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav7()"> <button class="button button2">Carrom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ </span>
+
+</div>
+ <div style='font-family:"Mirza";font-size:38px;color:white;text-align:"left"'>
+<footer style="position:absolute;bottom:0px;width:100%;padding-bottom:10px;">
+                <ul>
+                    <li><a style='text-decoration:none;' href="../home.html">Home</a></li>
+                    <li><a style='text-decoration:none;' href="../gallery/gallery.html">Photo Gallery</a></li>
+                    <li><a style='text-decoration:none;' href="../team/team.html">Contact Us</a></li>
+                    <li><a style='text-decoration:none;' href="../register.html">Register</a></li>
+                </ul>
+        </footer>
+</div>
+<script type="text/javascript">
+    $('a#foot').click(function(){ openNav8(); return false; })
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+function openNav1() {
+    document.getElementById("myNav1").style.width = "100%";
+}
+
+function closeNav1() {
+    document.getElementById("myNav1").style.width = "0%";
+}
+
+function openNav2() {
+    document.getElementById("myNav2").style.width = "100%";
+}
+
+function closeNav2() {
+    document.getElementById("myNav2").style.width = "0%";
+}
+
+function openNav3() {
+    document.getElementById("myNav3").style.width = "100%";
+}
+
+function closeNav3() {
+    document.getElementById("myNav3").style.width = "0%";
+}
+
+
+function openNav4() {
+    document.getElementById("myNav4").style.width = "100%";
+}
+
+function closeNav4() {
+    document.getElementById("myNav4").style.width = "0%";
+}
+
+
+function openNav5() {
+    document.getElementById("myNav5").style.width = "100%";
+}
+
+function closeNav5() {
+    document.getElementById("myNav5").style.width = "0%";
+}
+
+
+function openNav6() {
+    document.getElementById("myNav6").style.width = "100%";
+}
+
+function closeNav6() {
+    document.getElementById("myNav6").style.width = "0%";
+}
+
+
+function openNav7() {
+    document.getElementById("myNav7").style.width = "100%";
+}
+
+function closeNav7() {
+    document.getElementById("myNav7").style.width = "0%";
+}
+
+function openNav8() {
+    document.getElementById("myNav8").style.width = "100%";
+}
+
+function closeNav8() {
+    document.getElementById("myNav8").style.width = "0%";
+}
+
+function openNav9() {
+    document.getElementById("myNav9").style.width = "100%";
+}
+
+function closeNav9() {
+    document.getElementById("myNav9").style.width = "0%";
+}
+
+function openNav10() {
+    document.getElementById("myNav10").style.width = "100%";
+}
+
+function closeNav10() {
+    document.getElementById("myNav10").style.width = "0%";
+}
+
+function openNav11() {
+    document.getElementById("myNav11").style.width = "100%";
+}
+
+function closeNav11() {
+    document.getElementById("myNav11").style.width = "0%";
+}
+
+function openNav12() {
+    document.getElementById("myNav12").style.width = "100%";
+}
+
+function closeNav12() {
+    document.getElementById("myNav12").style.width = "0%";
+}
+
+function openNav13() {
+    document.getElementById("myNav13").style.width = "100%";
+}
+
+function closeNav13() {
+    document.getElementById("myNav13").style.width = "0%";
+}
+
+function openNav14() {
+    document.getElementById("myNav14").style.width = "100%";
+}
+
+function closeNav14() {
+    document.getElementById("myNav14").style.width = "0%";
+}
+
+function openNav15() {
+    document.getElementById("myNav15").style.width = "100%";
+}
+
+function closeNav15() {
+    document.getElementById("myNav15").style.width = "0%";
+}
+
+function openNav16() {
+    document.getElementById("myNav16").style.width = "100%";
+}
+
+function closeNav16() {
+    document.getElementById("myNav16").style.width = "0%";
+}
+
+function openNav17() {
+    document.getElementById("myNav17").style.width = "100%";
+}
+
+function closeNav17() {
+    document.getElementById("myNav17").style.width = "0%";
+}
+
+</script>
+
+
+</body>
+</html>

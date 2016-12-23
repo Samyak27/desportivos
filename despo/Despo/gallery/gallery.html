@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallery</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+		<script src="js/modernizr.min.js"></script>
+        <style>
+            body{
+                background-color: white;
+            }
+            
+/*            image modal css*/
+            .modal-wrap{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.8);
+                display: none;
+                z-index: 99;
+                cursor:not-allowed;
+            } 
+        
+            .img-wrap{
+                max-width: 700px;
+                margin: auto;
+                margin-top: 70px;
+            }
+            
+            .img-wrap img{
+                height: auto;
+                max-width: 700px;
+            }
+            
+            .small-img{
+                cursor: pointer;
+            }
+    
+            footer li{
+                display: inline-block;
+                list-style: none;
+                text-align: center;
+                padding: 0px 40px 0px;
+/*                background-color: gray;*/
+            }
+
+            footer a{
+                color: white;
+            }
+            
+            footer{
+                text-align: center;
+                background-color: gray;
+            }
+        </style>
+	</head>
+	<body>
+				<section id="photostack-1" class="photostack photostack-start">
+				<div>
+					<figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/1.jpg" alt="img01" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Cricket</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/2.jpg" alt="img02" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Basketball</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/3.jpg" alt="img03" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Football</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/4.jpg" alt="img04" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Volleyball</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/10.jpg" alt="img05" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Badminton</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/18.jpg" alt="img06" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Stunts</h2>
+						</figcaption>
+					</figure>
+
+                    <figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/6.jpg" alt="img07" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Stunts</h2>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a class="photostack-img"><img src="img/gallery/thumbs/5.jpg" alt="img08" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Badminton</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/17.jpg" alt="img09" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Zorbing</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/9.jpg" alt="img10" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Chess</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/13.jpg" alt="img11" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Badminton</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/12.jpg" alt="img12" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Football</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/14.jpg" alt="img15" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Table Tennis</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a class="photostack-img"><img src="img/gallery/thumbs/16.jpg" alt="img16" width="250" height="250" class="small-img"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Table Tennis</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+        
+        <div class="modal-wrap">
+            <div class="img-wrap">
+                <img src="" class="big-img"/>
+            </div>
+        </div>
+        
+        <footer>
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../events/events.html">Events</a></li>
+                    <li><a href="../team/team.html">Contact Us</a></li>
+                    <li><a href="../register.html">Register</a></li>
+                </ul>
+        </footer>
+
+		<script src="js/classie.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+
+			new Photostack( document.getElementById( 'photostack-1' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+		</script>
+        
+<!--        image modal script-->
+        <script>
+            $('.small-img').click(function() {
+                var imglink = $(this).attr('src');
+                $('.modal-wrap').css('display', 'inline-block');
+                $('.big-img').attr('src', imglink);
+            })
+            
+            $('.modal-wrap').click(function() {
+                $('.modal-wrap').css('display', 'none');
+            })
+        </script>
+	</body>
+</html>

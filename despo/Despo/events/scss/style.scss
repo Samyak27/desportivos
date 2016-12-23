@@ -1,0 +1,95 @@
+// ROTATING ITEMS IN A CIRCULAR PATH
+// WHILST KEEPING THEM UPRIGHT
+
+// how does it work?
+
+// it works because the transform property applies the properties in the order they are written
+
+// in this case
+// transform: rotate({d}deg) translateX({x}) rotate(-{d}deg);
+
+// - first the initial *rotate* is applied
+//   and the object is rotated {d} degrees
+
+// - then the *translateX* is applied
+//   and the object is moved {x} along its x-axis
+//   (as this has been rotated
+//   it is in the direction of the rotation)
+
+// - lastly the last *rotate* is applied
+//   with the same {r} in the opposite direction of the first
+//   putting back on its original angle
+
+// -----------------
+
+$sun-diameter: 14vw;
+$planet-diameter: 6vw;
+
+$orbit: 10vw; // actually the radius of the orbit
+
+// colors
+$sun: Orange;
+$planet1: IndianRed;
+$planet2: MediumSeaGreen;
+$planet3: CadetBlue;
+$bg: AntiqueWhite;
+
+@for $i from 1 to 4 {
+  @keyframes planet#{$i} {
+    from { transform: rotate(0deg) translateX(#{$orbit * $i}) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(#{$orbit * $i}) rotate(-360deg); }
+  }
+}
+
+*, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  width: $sun-diameter;
+  height: $sun-diameter;
+  position: absolute;
+  left: calc(50% - #{$sun-diameter / 2});
+  top: calc(50% - #{$sun-diameter / 2});
+  font-size: $sun-diameter;
+  line-height: $sun-diameter * 0.85; // adjustment for symbol not being centered
+  color: $sun;
+}
+
+h4 {
+  width: $planet-diameter;
+  height: $planet-diameter;
+  position: absolute;
+  top: calc(50% - #{$planet-diameter / 2});
+  left: calc(50% - #{$planet-diameter / 2});
+  font-size: $planet-diameter;
+  line-height: $planet-diameter;
+
+  &:nth-of-type(1) { color: $planet1; animation: planet1 4s linear infinite; }
+  &:nth-of-type(2) { color: $planet2; animation: planet2 9s linear infinite; }
+  &:nth-of-type(3) { color: $planet3; animation: planet3 14s linear infinite; }
+}
+
+body {
+  background-color: $bg;
+
+  // illustrating paths
+  &::before {
+    content: "";
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: calc(50% - 10vw);
+    left: calc(50% - 10vw);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 0.1vw darken($bg, 20%),
+      0 0 0 9.9vw $bg,
+      0 0 0 10vw darken($bg, 20%),
+      0 0 0 19.9vw $bg,
+      0 0 0 20vw darken($bg, 20%);
+  }
+}

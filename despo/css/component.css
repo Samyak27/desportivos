@@ -13,6 +13,11 @@
 	letter-spacing: 14px;
 	text-align: center;
 }
+.skip	{display:block;
+			position:relative;
+			left:95%;
+			font-size:1em;
+			font-family: 'Arial', 'Lato', sans-serif;}
 
 .os-phrases h2,
 .os-phrases h2 > span {
