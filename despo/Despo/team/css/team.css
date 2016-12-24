@@ -12,7 +12,7 @@ i{
 }
 
 body{
-    background-image: url("../45.jpg");
+    background-image: url("../img/obxBz5.png");
 }
 
 .gsec-wrap{
@@ -35,10 +35,12 @@ body{
 
 .gsec{
     padding: 10px;
+    color: black;
 }
 
 .categ{
     padding: 10px;
+    color: black;
 }
 
 .team-img img{
@@ -69,6 +71,7 @@ body{
 
 .team-text{
     padding: 10px;
+    color: black;
 }
 
 .overlay { 
