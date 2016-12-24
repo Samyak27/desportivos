@@ -150,8 +150,8 @@ button {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: ;
 	cursor: pointer;
-	left:92.8%;
-	top:-0.3%;
+	right:8.5%;
+	top:-0.4%;
 	position:fixed;
 	
 	background:transparent;
@@ -160,8 +160,8 @@ button {
 button img {position:relative;
 			left:0%;
 			top:0;
-			height:5.5vw;
-			width:5.5vw;
+			height:8vw;
+			width:8vw;
 			display:block;
 			}
 
