@@ -96,12 +96,6 @@ body{
     margin: auto;
 }
 
-.header	{position:relative;
-		width:100%;
-		text-align:center;
-		top:10%;
-		font-family: 'Roboto Slab';}
-
 footer li{
                 display: inline-block;
                 list-style: none;

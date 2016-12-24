@@ -256,7 +256,7 @@ footer	{padding-top:20px;
 			.section .intro1	{display:none;font-size:0.5em;width:100%;margin-top:60px;}
 		   .frontvideo	{display:none;
 						}	
-	
+    
 			button {
 				text-align:center;
 				height:0;
@@ -313,6 +313,9 @@ footer	{padding-top:20px;
 				}
 .section .intro1	 a{color:white;}
 .section .intro1	 a:hover{background-color:#242529}
+.intro1{
+    margin-top: 170px;
+}
 
 .middle	{display:block;
 		width:2px;
@@ -328,19 +331,23 @@ footer	{padding-top:20px;
 			height:auto;
 			width:100%;
 			padding:15px;
-			border:1px;
-			border-radius:50%;
+			border:1px solid white;
+			border-radius:100%;
 			margin:5px;
 			font-size:1em;
 			cursor:pointer;
 			background-color:;
 			}
 
-.fb	{background-color:#3b5988;}
+/*
+
+.fb{background-color:#3b5988;}
 
 
 .twitter	{background-color:#0084b4;}
 .youtube	{background-color:#c4302b;}
 .insta		{background-color:#E54E4E;}
+*/
+
 
 

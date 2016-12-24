@@ -101,7 +101,11 @@ footer li{
                 background-color: black;
             }
 
-
+    @media screen and (max-width: 930px){
+        .hide-resp{
+            display: none;
+        }
+    }
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -110,8 +114,10 @@ footer li{
     top: 15px;
     right: 35px;
 }
+    
     </style>
-<body style="background-size:cover;background-image: url(imgpack/background.png);postion:absolute;background-repeat:no-repeat;">
+<body style="background-size:cover;background-image: url(imgpack/background.png);postion:absolute;background-repeat:no-repeat; background-attachment: fixed;">
+    <div class="hide-resp">
 <div style="padding-left:3%;padding-top:1%;">
 	<img src="imgpack/despo.png" height="125px" width="auto" ></div>
   <h1><center><img src="imgpack/despo.png" height="100px" width="auto"></h1></center>
@@ -125,7 +131,7 @@ footer li{
 <h4><a href=# onclick="openNav15()"><img src="imgpack/boxing.png"></a></h4>
 <h4><a href=# onclick="openNav16()"><img src="imgpack/chess.png"></a></h4>
 <h4><a href=# onclick="openNav17()"><img src="imgpack/karate.png"></a></h4>
-
+    </div>
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   	<div class="overlay-content">
@@ -515,7 +521,7 @@ footer li{
 <br>
 
 <div class="right">
-<span style="font-size:30px;cursor:pointer;font-family:"Roboto" onclick="openNav()"> <button class="button button2">Kabbaddi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+<span style="font-size:30px;cursor:pointer;font-family:'Roboto'" onclick="openNav()"> <button class="button button2">Kabbaddi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
  </span>
 <br>
 <span style="font-size:30px;cursor:pointer;"onclick="openNav1()"> <button class="button button2">Taekwondo&nbsp;&nbsp;</button>
