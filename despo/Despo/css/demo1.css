@@ -284,18 +284,24 @@ footer	{padding-top:20px;
 							top:0;
 							display:none;}
 			.main .reachus {height:300px;position:relative;margin-bottom:20px;}
-			.social li	{display:block;
-			height:30px;
-			width:30px;
-			padding-right:10px;
+	
+		
+			.social	{display:block;
+					width:40px;
+					height:40px;}
+
+		.social li	{display:block;
+			height:50px;
+			width:100%;
+			padding:12px;
 			border:1px;
-			border-radius:50%;
-			margin:0px;
+			border-radius:100%;
+			margin:5px;
 			font-size:1em;
 			cursor:pointer;
+			background-color:;
 			}
-			.social	{display:block;
-					width:2%;}
+			
 				
 										}
 
@@ -324,14 +330,16 @@ footer	{padding-top:20px;
 		background:white;
 		left:50%;
 		margin-top:38%;}
+
 .social	{display:block;
-		width:4%;}
+		width:50px;
+		height:50px;}
 
 .social li	{display:block;
-			height:auto;
+			height:50px;
 			width:100%;
 			padding:15px;
-			border:1px solid white;
+			border:1px;
 			border-radius:100%;
 			margin:5px;
 			font-size:1em;
@@ -339,15 +347,23 @@ footer	{padding-top:20px;
 			background-color:;
 			}
 
-/*
+
 
 .fb{background-color:#3b5988;}
+.fb:hover { background-color:white;
+			color:#3b5988;}
 
 
 .twitter	{background-color:#0084b4;}
+.twitter:hover { background-color:white;
+			color:#0084b4;}
 .youtube	{background-color:#c4302b;}
+.youtube:hover { background-color:white;
+			color:#c4302b;}
 .insta		{background-color:#E54E4E;}
-*/
+.insta:hover { background-color:white;
+			color:#E54E4E;}
+
 
 
 
